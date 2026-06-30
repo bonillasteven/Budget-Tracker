@@ -10,23 +10,31 @@
 
   <div class="container">
     <h1>Steven Budget Tracker</h1>
-    <p>Track your income, expenses, and balance.</p>
+    <p>Enter your income and expenses to see your balance.</p>
 
-    <div class="balance-card">
-      <h2>Current Balance</h2>
-      <h3 id="balance">$0.00</h3>
+    <div class="card">
+      <h2>Income</h2>
+      <input type="number" id="income" placeholder="Enter monthly income">
     </div>
 
-    <input type="text" id="transaction-name" placeholder="Transaction name">
-    <input type="number" id="transaction-amount" placeholder="Amount">
-
-    <div class="buttons">
-      <button onclick="addIncome()">Add Income</button>
-      <button onclick="addExpense()">Add Expense</button>
+    <div class="card">
+      <h2>Expenses</h2>
+      <input type="number" id="rent" placeholder="Rent / Mortgage">
+      <input type="number" id="food" placeholder="Food">
+      <input type="number" id="gas" placeholder="Gas">
+      <input type="number" id="utilities" placeholder="Utilities">
+      <input type="number" id="phone" placeholder="Phone">
+      <input type="number" id="other" placeholder="Other expenses">
     </div>
 
-    <h2>Transactions</h2>
-    <ul id="transaction-list"></ul>
+    <button onclick="calculateBudget()">Calculate Balance</button>
+
+    <div class="result">
+      <h2>Budget Summary</h2>
+      <p>Income: <span id="total-income">$0.00</span></p>
+      <p>Expenses: <span id="total-expenses">$0.00</span></p>
+      <p class="balance">Balance: <span id="balance">$0.00</span></p>
+    </div>
   </div>
 
   <script src="script.js"></script>
