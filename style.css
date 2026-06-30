@@ -2,37 +2,33 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f4f6f8;
   margin: 0;
-  padding: 0;
+  padding: 20px;
 }
 
 .container {
   max-width: 500px;
-  margin: 50px auto;
+  margin: 30px auto;
   background: white;
   padding: 25px;
-  border-radius: 12px;
+  border-radius: 14px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.12);
   text-align: center;
 }
 
 h1 {
   color: #2c3e50;
+  margin-bottom: 5px;
 }
 
 p {
   color: #555;
 }
 
-.balance-card {
-  background-color: #e8f4ff;
+.card {
+  background: #f8fafc;
   padding: 15px;
-  border-radius: 10px;
-  margin: 20px 0;
-}
-
-#balance {
-  font-size: 32px;
-  color: #0077b6;
+  margin: 18px 0;
+  border-radius: 12px;
 }
 
 input {
@@ -44,33 +40,26 @@ input {
 }
 
 button {
-  width: 42%;
-  padding: 12px;
-  margin: 8px 4px;
+  width: 95%;
+  padding: 14px;
+  margin: 15px 0;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
+  background-color: #0077b6;
   color: white;
+  font-size: 16px;
   font-weight: bold;
   cursor: pointer;
 }
 
-button:first-child {
-  background-color: #2ecc71;
+.result {
+  background: #e8f4ff;
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 15px;
 }
 
-button:last-child {
-  background-color: #e74c3c;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  background-color: #f1f1f1;
-  padding: 10px;
-  margin: 8px 0;
-  border-radius: 8px;
-  text-align: left;
+.balance {
+  font-size: 22px;
+  font-weight: bold;
 }
